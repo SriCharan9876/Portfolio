@@ -5,13 +5,17 @@ import { Link } from 'react-scroll';
 
 export const Hero = () => {
     return (
-        <section id="home" className="min-h-screen flex items-center justify-center bg-light pt-28 pb-12">
+        <section
+            id="home"
+            className="min-h-screen flex items-center justify-center bg-light pt-28 pb-12"
+        >
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
 
-                    {/* LEFT COLUMN: Main Text & CTA (Approx 7/12 width) */}
+                    {/* LEFT COLUMN */}
                     <div className="lg:col-span-7 flex flex-col justify-center space-y-8">
-                        {/* Tagline Badge */}
+
+                        {/* Availability Badge */}
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -26,16 +30,18 @@ export const Hero = () => {
                             </div>
                         </motion.div>
 
-                        {/* Main Heading */}
+                        {/* Heading */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
                         >
-                            <h1 className="text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[0.9]">
-                                Hi, I'm a <br />
-                                full-stack <br />
-                                developer<span className="text-xl align-top text-slate-400 font-normal">.</span>
+                            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+                                Hi, I’m <span className="text-accent">Sri Charan</span>
+                                <br />
+                                A full stack engineer building
+                                <br />
+                                AI-powered web systems<span className="text-slate-400">.</span>
                             </h1>
                         </motion.div>
 
@@ -46,10 +52,11 @@ export const Hero = () => {
                             transition={{ delay: 0.2 }}
                             className="text-lg text-slate-500 max-w-md leading-relaxed"
                         >
-                            Passion for building scalable, AI-powered web applications. Ready to contribute to innovative engineering teams.
+                            I design and develop scalable web applications with clean APIs,
+                            real-time features, and applied GenAI — from idea to production.
                         </motion.p>
 
-                        {/* CTA Button */}
+                        {/* CTA */}
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -63,10 +70,10 @@ export const Hero = () => {
                         </motion.div>
                     </div>
 
-                    {/* RIGHT COLUMN: Bento Grid (Approx 5/12 width) */}
+                    {/* RIGHT COLUMN */}
                     <div className="lg:col-span-5 grid grid-cols-2 gap-4 h-full">
 
-                        {/* Top Left: Small Profile Info */}
+                        {/* Profile Card */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -74,15 +81,13 @@ export const Hero = () => {
                             className="bg-white rounded-3xl p-6 shadow-xl shadow-slate-200 border border-slate-100 flex flex-col justify-center"
                         >
                             <h3 className="text-xl font-bold text-slate-900">Sri Charan</h3>
-                            <p className="text-slate-500 text-sm font-medium">B.Tech - ECE</p>
+                            <p className="text-slate-500 text-sm font-medium">B.Tech – ECE</p>
                             <p className="text-slate-400 text-xs mt-1">Amrita Vishwa Vidyapeetham</p>
-                            <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-green-600 bg-green-50 px-2 py-1 rounded w-fit">
-                                <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-                                Online
-                            </div>
+
+
                         </motion.div>
 
-                        {/* Right Vertical: LARGE PROFILE IMAGE */}
+                        {/* Profile Image */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -101,29 +106,32 @@ export const Hero = () => {
                             </div>
                         </motion.div>
 
-                        {/* Middle Left: Stats/Achievements */}
+                        {/* Highlights */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ delay: 0.4 }}
                             className="bg-slate-900 rounded-3xl p-6 shadow-xl flex flex-col justify-between text-white relative overflow-hidden"
                         >
-                            {/* Decorative blob */}
                             <div className="absolute top-[-50%] left-[-50%] w-full h-full bg-secondary/30 rounded-full blur-2xl"></div>
 
                             <div className="relative z-10">
                                 <div className="flex items-center gap-2 text-white/70 text-xs font-bold uppercase tracking-wider mb-2">
-                                    <Star size={12} className="text-yellow-400" fill="currentColor" /> Highlights
+                                    <Star size={12} className="text-yellow-400" fill="currentColor" />
+                                    Highlights
                                 </div>
-                                <div className="flex items-baseline gap-1">
-                                    <span className="text-4xl font-bold">2</span>
-                                    <span className="text-sm font-medium text-white/60">Hackathons Won</span>
-                                </div>
-                                <p className="text-xs text-white/40 mt-1">Top 5% in Coding Contests</p>
+
+                                <span className="text-sm font-semibold text-white">
+                                    AI VERSE Hackathon – Award Winner
+                                </span>
+
+                                <p className="text-xs text-white/50 mt-2 leading-snug">
+                                    Built an AI-driven infant monitoring system with real-time anomaly detection.
+                                </p>
                             </div>
                         </motion.div>
 
-                        {/* Bottom Wide Card: Socials / Tech */}
+                        {/* Tech Stack + Socials */}
                         <motion.div
                             initial={{ opacity: 0, scale: 0.95 }}
                             animate={{ opacity: 1, scale: 1 }}
@@ -131,24 +139,46 @@ export const Hero = () => {
                             className="col-span-2 bg-gradient-to-r from-slate-50 to-slate-100 rounded-3xl p-5 flex items-center justify-between border border-slate-200"
                         >
                             <div className="flex items-center gap-3">
-                                <div className="p-2 bg-white rounded-lg shadow-sm text-slate-700"><PenTool size={18} /></div>
+                                <div className="p-2 bg-white rounded-lg shadow-sm text-slate-700">
+                                    <PenTool size={18} />
+                                </div>
                                 <div className="flex flex-col">
-                                    <span className="text-xs font-bold text-slate-900 uppercase">Tech Stack</span>
-                                    <span className="text-xs text-slate-500">MERN, Next.js, Python</span>
+                                    <span className="text-xs font-bold text-slate-900 uppercase">
+                                        Tech Stack
+                                    </span>
+                                    <span className="text-xs text-slate-500">
+                                        React • Node.js • MongoDB • PostgreSQL • GenAI
+                                    </span>
                                 </div>
                             </div>
 
                             <div className="h-8 w-[1px] bg-slate-200 mx-2"></div>
 
                             <div className="flex gap-3">
-                                <a href="https://github.com/SriCharan9876" target="_blank" className="p-2 bg-white rounded-full text-slate-600 hover:text-slate-900 hover:shadow-md transition-all"><Github size={18} /></a>
-                                <a href="https://www.linkedin.com/in/sri-charan-a-281532286" target="_blank" className="p-2 bg-white rounded-full text-slate-600 hover:text-blue-700 hover:shadow-md transition-all"><Linkedin size={18} /></a>
-                                <a href="mailto:charan3407@gmail.com" className="p-2 bg-white rounded-full text-slate-600 hover:text-red-500 hover:shadow-md transition-all"><Mail size={18} /></a>
+                                <a
+                                    href="https://github.com/SriCharan9876"
+                                    target="_blank"
+                                    className="p-2 bg-white rounded-full text-slate-600 hover:text-slate-900 hover:shadow-md transition-all"
+                                >
+                                    <Github size={18} />
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/in/sri-charan-a-281532286"
+                                    target="_blank"
+                                    className="p-2 bg-white rounded-full text-slate-600 hover:text-blue-700 hover:shadow-md transition-all"
+                                >
+                                    <Linkedin size={18} />
+                                </a>
+                                <a
+                                    href="mailto:charan3407@gmail.com"
+                                    className="p-2 bg-white rounded-full text-slate-600 hover:text-red-500 hover:shadow-md transition-all"
+                                >
+                                    <Mail size={18} />
+                                </a>
                             </div>
                         </motion.div>
 
                     </div>
-
                 </div>
             </div>
         </section>

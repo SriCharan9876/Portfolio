@@ -23,7 +23,7 @@ const skillCategories = [
         skills: ["TensorFlow", "Scikit-learn", "OpenCV", "Gemini SDK", "RAG", "N8N"]
     },
     {
-        title: "DevOps & Tools",
+        title: "DevOps & Tools (Basics)",
         icon: <Terminal className="text-slate-600" size={24} />,
         skills: ["Git/GitHub", "Docker", "Kubernetes", "Redis", "GCP", "CI/CD"]
     },
