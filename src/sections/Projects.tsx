@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Github, X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from '../components/ui/Button';
-import { projects, Project } from '../data/projects';
+import { projects } from '../data/projects';
+import type { Project } from '../data/projects';
 
 const filters = ["All", "Full-Stack", "AI", "Gen AI", "IOT"];
 
