@@ -19,6 +19,7 @@ export const Navbar = () => {
         { name: 'About', to: 'about' },
         { name: 'Skills', to: 'skills' },
         { name: 'Projects', to: 'projects' },
+        { name: 'Certifications', to: 'certifications' },
         { name: 'Experience', to: 'experience' },
         { name: 'Contact', to: 'contact' },
     ];
@@ -56,7 +57,7 @@ export const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="/resume.pdf"
+                        href="https://drive.google.com/file/d/1eWEIGt_q4B9v1pHh2h9RB3IvfmB578uV/view?usp=drive_link"
                         target="_blank"
                         className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/25"
                     >
@@ -89,7 +90,7 @@ export const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="/resume.pdf"
+                        href="https://drive.google.com/file/d/1eWEIGt_q4B9v1pHh2h9RB3IvfmB578uV/view?usp=drive_link"
                         target="_blank"
                         className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/25"
                     >

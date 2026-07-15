@@ -36,12 +36,10 @@ export const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.1 }}
                         >
-                            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-slate-900 leading-tight">
+                            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-tight">
                                 Hi, I’m <span className="text-accent">Sri Charan</span>
                                 <br />
-                                A full stack engineer building
-                                <br />
-                                AI-powered web systems<span className="text-slate-400">.</span>
+                                A Full Stack Developer
                             </h1>
                         </motion.div>
 
@@ -52,8 +50,7 @@ export const Hero = () => {
                             transition={{ delay: 0.2 }}
                             className="text-lg text-slate-500 max-w-md leading-relaxed"
                         >
-                            I design and develop scalable web applications with clean APIs,
-                            real-time features, and applied GenAI — from idea to production.
+                            Who loves solving real-world problems by engineering robust full-stack applications and intelligent generative AI systems.
                         </motion.p>
 
                         {/* CTA */}

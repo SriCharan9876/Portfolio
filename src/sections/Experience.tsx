@@ -1,12 +1,35 @@
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { Briefcase, MapPin } from 'lucide-react';
 
 const experiences = [
     {
-        role: "Core Team Engineer - AIOT & Web Dev",
+        role: "API Development Intern",
+        company: "Aarti JP IT Company",
+        period: "May 2026",
+        desc: [
+            "Collaborated with a cross-functional team to develop the company's full-stack web application by implementing backend REST APIs, integrating databases, and supporting frontend functionality.",
+            "Automated role-specific job searching and email extraction workflows using Selenium, reducing manual effort and improving data collection efficiency by 400%."
+        ],
+        type: "Internship"
+    },
+    {
+        role: "Technical Presentor - Anoha Tech Fair",
+        company: "Anokha (Amrita University Techfest)",
+        period: "Jan 2026 · 1 mo",
+        location: "Coimbatore, Tamil Nadu, India · On-site",
+        desc: [
+            "Circuit Crafter was selected for presentation at Anokha 2026 Tech Fair and featured in the official Anokha newsletter for its innovative application of Generative AI in circuit design."
+        ],
+        type: "Full-time"
+    },
+    {
+        role: "Core Team Engineer - AIOT & Full Stack Development",
         company: "Intel IoT Club",
         period: "Feb 2025 – Present",
-        desc: "Collaborated with cross-functional teams to build full-stack & AIoT projects. Led teams in hackathons and conducted workshops on AI/ML and IoT. Key contribution: Developed 'Smart Bicycle Locker System' with MERN stack, Google Maps API, and real-time tracking.",
+        desc: [
+            "Spearheaded the development of a Smart Bicycle Locker System utilizing MERN stack and Google Maps APIs, incorporating secure user authentication and real-time tracking functionalities for 75 active users.",
+            "Mentored 50+ students through hands-on workshops on scalable web-based solutions and debugging practices, emphasizing clean architecture and scalable design patterns."
+        ],
         type: "Club Activity"
     }
 ];
@@ -43,15 +66,23 @@ export const Experience = () => {
                                     <div>
                                         <h3 className="text-xl font-bold text-slate-900">{exp.role}</h3>
                                         <p className="text-primary font-semibold">{exp.company}</p>
+                                        {exp.location && (
+                                            <div className="flex items-center gap-1 text-xs text-slate-400 mt-1 font-medium">
+                                                <MapPin size={12} />
+                                                <span>{exp.location}</span>
+                                            </div>
+                                        )}
                                     </div>
-                                    <div className="flex items-center gap-2 text-sm text-slate-400 font-medium">
+                                    <div className="flex items-center gap-2 text-sm text-slate-400 font-medium flex-shrink-0">
                                         <Briefcase size={14} />
                                         {exp.period}
                                     </div>
                                 </div>
-                                <p className="text-slate-600 leading-relaxed">
-                                    {exp.desc}
-                                </p>
+                                <ul className="list-disc pl-5 space-y-2 text-slate-600 leading-relaxed text-sm md:text-base">
+                                    {exp.desc.map((bullet, idx) => (
+                                        <li key={idx}>{bullet}</li>
+                                    ))}
+                                </ul>
                                 <span className="inline-block mt-4 text-xs font-bold text-slate-400 bg-slate-100 px-2 py-1 rounded">
                                     {exp.type}
                                 </span>

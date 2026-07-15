@@ -25,21 +25,26 @@ export const About = () => {
                         className="space-y-6 text-lg text-slate-600 leading-relaxed"
                     >
                         <p>
-                            I’m a <span className="font-semibold text-slate-900">full-stack engineer</span> with hands-on experience
-                            building <span className="font-semibold text-slate-900">scalable, production-oriented web systems</span>,
-                            real-time services, and cloud-backed applications.
+                            <span className="font-semibold text-slate-900">Software Development Engineer (SDE)</span> specializing
+                            in building <span className="font-semibold text-slate-900">scalable full-stack applications</span> and
+                            <span className="font-semibold text-slate-900"> AI-powered systems</span> using the <span className="font-semibold text-slate-900">MERN stack</span>.
                         </p>
 
                         <p>
-                            My work spans <span className="font-semibold text-slate-900">secure authentication</span>,
-                            API-driven architectures, and data-backed features — with a strong focus on reliability,
-                            performance, and clean system design.
+                            Developed <span className="font-semibold text-slate-900">production-ready applications</span> featuring
+                            <span className="font-semibold text-slate-900"> secure authentication</span>,
+                            <span className="font-semibold text-slate-900"> real-time communication</span>,
+                            <span className="font-semibold text-slate-900"> cloud-integrated workflows</span>, and
+                            <span className="font-semibold text-slate-900"> AI capabilities</span>.
                         </p>
 
                         <p>
-                            I actively work at the intersection of <span className="font-semibold text-slate-900">full-stack development and applied AI</span>,
-                            building systems that integrate <span className="font-semibold text-slate-900">machine learning, GenAI workflows,
-                            and real-time automation</span> to solve real-world problems.
+                            Strong foundation in <span className="font-semibold text-slate-900">backend architecture</span>,
+                            <span className="font-semibold text-slate-900"> REST API development</span>,
+                            <span className="font-semibold text-slate-900"> database optimization</span>, and
+                            <span className="font-semibold text-slate-900"> scalable system design</span>, with growing expertise in
+                            <span className="font-semibold text-slate-900"> distributed systems</span> and
+                            <span className="font-semibold text-slate-900"> generative AI</span>.
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 mt-8">
@@ -90,6 +95,32 @@ export const About = () => {
                                 <div className="mt-2 inline-block px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary border border-slate-100">
                                     CGPA: 8.55 / 10
                                 </div>
+                            </div>
+
+                            <div className="relative">
+                                <span className="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 className="text-lg font-bold text-slate-900">
+                                    Higher secondary education - BIE AP, MPC
+                                </h4>
+                                <p className="text-slate-500 mb-1">
+                                    Bhashyam College of Education (BCE), Guntur
+                                </p>
+                                <p className="text-sm font-medium text-slate-400">
+                                    2021 – 2023
+                                </p>
+                                <div className="mt-2 inline-block px-3 py-1 bg-white rounded-full text-xs font-semibold text-primary border border-slate-100">
+                                    Grade: 946 / 1000
+                                </div>
+                            </div>
+
+                            <div className="relative">
+                                <span className="absolute -left-[39px] top-1 h-5 w-5 rounded-full border-4 border-white bg-primary"></span>
+                                <h4 className="text-lg font-bold text-slate-900">
+                                    Primary education - SSC AP, MPC
+                                </h4>
+                                <p className="text-slate-500 mb-1">
+                                    Bhashyam high school
+                                </p>
                             </div>
                         </div>
                     </motion.div>
