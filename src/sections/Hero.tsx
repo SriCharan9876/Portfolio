@@ -92,7 +92,7 @@ export const Hero = () => {
                             className="row-span-2 relative rounded-3xl overflow-hidden shadow-xl border border-slate-100 group"
                         >
                             <img
-                                src="/profile-pic.jpg"
+                                src="/profile-pic.png"
                                 alt="Sri Charan"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />

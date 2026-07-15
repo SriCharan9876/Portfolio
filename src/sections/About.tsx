@@ -103,7 +103,7 @@ export const About = () => {
                                     Higher secondary education - BIE AP, MPC
                                 </h4>
                                 <p className="text-slate-500 mb-1">
-                                    Bhashyam College of Education (BCE), Guntur
+                                    Bhashyam Junior College, Guntur
                                 </p>
                                 <p className="text-sm font-medium text-slate-400">
                                     2021 – 2023

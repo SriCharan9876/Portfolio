@@ -57,7 +57,7 @@ export const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="https://drive.google.com/file/d/1eWEIGt_q4B9v1pHh2h9RB3IvfmB578uV/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1cKQeoIAILhIsLSfyHP8oyEVND7oWK1y6/view"
                         target="_blank"
                         className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/25"
                     >
@@ -90,7 +90,7 @@ export const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="https://drive.google.com/file/d/1eWEIGt_q4B9v1pHh2h9RB3IvfmB578uV/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1cKQeoIAILhIsLSfyHP8oyEVND7oWK1y6/view?usp=sharing"
                         target="_blank"
                         className="px-6 py-2 bg-primary text-white rounded-full font-medium hover:bg-blue-600 transition-colors shadow-lg shadow-primary/25"
                     >

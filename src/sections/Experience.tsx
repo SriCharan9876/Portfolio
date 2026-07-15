@@ -7,8 +7,8 @@ const experiences = [
         company: "Aarti JP IT Company",
         period: "May 2026",
         desc: [
-            "Collaborated with a cross-functional team to develop the company's full-stack web application by implementing backend REST APIs, integrating databases, and supporting frontend functionality.",
-            "Automated role-specific job searching and email extraction workflows using Selenium, reducing manual effort and improving data collection efficiency by 400%."
+            "Collaborated with a cross-functional team as a part of the backend team to develop the company's full-stack web application by implementing backend APIs for tracking clients' responses status.",
+            "Automated role-specific job searching, web scraping and email extraction workflows using Python and Selenium; dynamic resume generation by using LLMs; rate limiting queries, reducing manual effort and improving data collection efficiency by 400%. "
         ],
         type: "Internship"
     },
