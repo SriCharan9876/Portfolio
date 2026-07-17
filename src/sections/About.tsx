@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Users } from 'lucide-react';
+import { GraduationCap, Code2 } from 'lucide-react';
 
 export const About = () => {
     return (
@@ -15,55 +15,29 @@ export const About = () => {
                     <div className="h-1 w-20 bg-primary rounded-full"></div>
                 </motion.div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
 
                     {/* Bio */}
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="space-y-6 text-lg text-slate-600 leading-relaxed"
+                        className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-sm space-y-6 text-lg text-slate-600 leading-relaxed h-full flex flex-col"
                     >
-                        <p>
-                            <span className="font-semibold text-slate-900">Software Development Engineer (SDE)</span> specializing
-                            in building <span className="font-semibold text-slate-900">scalable full-stack applications</span> and
-                            <span className="font-semibold text-slate-900"> AI-powered systems</span> using the <span className="font-semibold text-slate-900">MERN stack</span>.
-                        </p>
-
-                        <p>
-                            Developed <span className="font-semibold text-slate-900">production-ready applications</span> featuring
-                            <span className="font-semibold text-slate-900"> secure authentication</span>,
-                            <span className="font-semibold text-slate-900"> real-time communication</span>,
-                            <span className="font-semibold text-slate-900"> cloud-integrated workflows</span>, and
-                            <span className="font-semibold text-slate-900"> AI capabilities</span>.
-                        </p>
-
-                        <p>
-                            Strong foundation in <span className="font-semibold text-slate-900">backend architecture</span>,
-                            <span className="font-semibold text-slate-900"> REST API development</span>,
-                            <span className="font-semibold text-slate-900"> database optimization</span>, and
-                            <span className="font-semibold text-slate-900"> scalable system design</span>, with growing expertise in
-                            <span className="font-semibold text-slate-900"> distributed systems</span> and
-                            <span className="font-semibold text-slate-900"> generative AI</span>.
-                        </p>
-
-                        <div className="grid grid-cols-2 gap-4 mt-8">
-                            <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                                <Code2 className="text-secondary mb-2" size={24} />
-                                <h4 className="font-bold text-slate-900">Full-Stack Systems</h4>
-                                <p className="text-sm text-slate-500">
-                                    APIs, Databases, Real-Time Apps
-                                </p>
+                        <div className="flex items-center gap-3 mb-2">
+                            <div className="p-3 bg-white rounded-full border border-slate-200 text-primary">
+                                <Code2 size={24} />
                             </div>
-
-                            <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                                <Users className="text-accent mb-2" size={24} />
-                                <h4 className="font-bold text-slate-900">Team Engineering</h4>
-                                <p className="text-sm text-slate-500">
-                                    Collaboration & Technical Leadership
-                                </p>
-                            </div>
+                            <h3 className="text-2xl font-bold text-slate-900">Profile</h3>
                         </div>
+
+                        <p>
+                            <span className="font-semibold text-slate-900">Software Development Engineer</span> specializing in designing and implementing reliable, maintainable <span className="font-semibold text-slate-900">AI-powered full-stack applications</span> that solve real-world challenges across multiple industries and use cases.
+                        </p>
+
+                        <p>
+                            Strong foundation in core computer science principles, <span className="font-semibold text-slate-900">Agile software development practices</span>, and <span className="font-semibold text-slate-900">cloud-native application development</span>, with a focus on <span className="font-semibold text-slate-900">scalable architectures</span>, clean code, and user-centered software design.
+                        </p>
                     </motion.div>
 
                     {/* Education */}

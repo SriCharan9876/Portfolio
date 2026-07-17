@@ -26,7 +26,17 @@ export const projects: Project[] = [
             "Circuit Crafter is a community-powered web platform that enables users to design, publish, and validate electronic circuit models. The platform integrates circuit image analysis to generate formula recommendations using Gemini-based generative AI. Additionally, a Retrieval-Augmented Generation (RAG) chatbot was implemented using vector embeddings to provide contextual assistance across the platform. The project demonstrates the integration of GenAI, semantic retrieval, real-time communication, and full-stack web technologies to support collaborative learning and electronics design.",
         tech: ["React", "Node.js", "WebSockets", "MongoDB (Vector Search)", "Gemini API", "RAG"],
         image: "bg-purple-100",
-        images: ["https://res.cloudinary.com/di75recky/image/upload/v1784099611/prj6_wbx1qf.png"],
+        images: ["https://res.cloudinary.com/di75recky/image/upload/v1784295839/cc1_ut6exw.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295840/cc2_fpaats.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295841/cc3_z1hdrp.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295873/cc4_beisyj.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295874/cc5_g8heaq.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295833/cc6_xzfb4k.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295882/cc7_rstrxu.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295878/cc8_ikxmng.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295878/cc9_yfhlaf.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784295880/cc10_havj3v.png"
+        ],
         domain: ["Gen AI", "AI", "Full-Stack"],
         links: {
             live: "https://circuit-crafter.vercel.app",
@@ -118,7 +128,6 @@ export const projects: Project[] = [
             github: "https://github.com/SriCharan9876/Movie-Recommendation-system"
         }
     },
-    
     {
         id: 11,
         title: "Smart Street AI",
@@ -134,6 +143,46 @@ export const projects: Project[] = [
         links: {
             live: "#",
             github: "https://github.com/SriCharan9876/SmartStreetAI"
+        }
+    },
+    {
+        id: 12,
+        title: "BlockChain Consensus Explorer",
+        desc: "web application designed to help developers, students, and blockchain enthusiasts explore, simulate, and compare distributed ledger consensus protocols.",
+        fullDesc:
+            "Consensus Explorer is a premium, interactive pedagogical web application designed to help developers, students, and blockchain enthusiasts explore, simulate, and compare distributed ledger consensus protocols.The platform provides interactive 3D visualizers, simulation environments, head-to-head comparison matrices, and multi-dimensional analysis pipelines for 13 distinct consensus algorithms, smart contract environments, and Layer 2 scaling architectures.",
+        tech: ["React"],
+        image: "bg-emerald-100",
+        images: ["https://res.cloudinary.com/di75recky/image/upload/v1784294220/Screenshot_2026-07-17_183400_vw84ho.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294179/Screenshot_2026-07-17_183708_zdtbbh.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294204/Screenshot_2026-07-17_183754_dd4xqg.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294219/Screenshot_2026-07-17_183733_uzk1sz.png"
+        ],
+        domain: ["Full-Stack"],
+        links: {
+            live: "https://consensus-explorer.vercel.app",
+            github: "https://github.com/SriCharan9876/Consensus_explorer"
+        }
+    },
+    {
+        id: 13,
+        title: "CollegeConnect",
+        desc: "CollegeConnect is a comprehensive web platform designed to streamline the college selection and admission process. It provides prospective students with tools to explore colleges, predict admission chances, compare institutions, and engage in community discussions.",
+        fullDesc:
+            "College Exploration: A dedicated section to browse and discover various colleges with detailed information. College Predictor: An algorithm-driven feature that estimates admission chances based on user-provided academic metrics. Comparison Tool: Allows users to select multiple colleges and compare them side-by-side across various parameters (e.g., fees, placement statistics, infrastructure). Community Discussion Forum: A platform for students to ask questions, share experiences, and connect with peers or alumni. MySpace (User Dashboard): A personalized dashboard managing user profiles, saved colleges, and forum activity. Secure Authentication: Robust user signup, login, and session management using JWT.",
+        tech: ["React"],
+        image: "bg-emerald-100",
+        images: ["https://res.cloudinary.com/di75recky/image/upload/v1784294136/Screenshot_2026-07-17_183426_ume0mk.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294140/Screenshot_2026-07-17_183815_p43enr.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294172/Screenshot_2026-07-17_184000_shvvfq.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294128/Screenshot_2026-07-17_184012_shuwdm.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294136/Screenshot_2026-07-17_183844_ywzadn.png",
+            "https://res.cloudinary.com/di75recky/image/upload/v1784294174/Screenshot_2026-07-17_183909_eu99oq.png"
+        ],
+        domain: ["Full-Stack"],
+        links: {
+            live: "https://collegeconnect-nu.vercel.app",
+            github: "https://github.com/SriCharan9876/CollegeConnect"
         }
     },
     {

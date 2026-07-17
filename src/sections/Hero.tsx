@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, PenTool, Star } from 'lucide-react';
 import { Button } from '../components/ui/Button';
-import { Link } from 'react-scroll';
 
 export const Hero = () => {
     return (
@@ -59,11 +58,11 @@ export const Hero = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3 }}
                         >
-                            <Link to="contact" smooth={true} offset={-50}>
+                            <a href="#contact">
                                 <Button size="lg" className="rounded-full px-8 text-lg">
                                     Contact Me
                                 </Button>
-                            </Link>
+                            </a>
                         </motion.div>
                     </div>
 

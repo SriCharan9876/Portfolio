@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../../utils/cn';
 
@@ -18,9 +17,10 @@ export const Navbar = () => {
     const navLinks = [
         { name: 'About', to: 'about' },
         { name: 'Skills', to: 'skills' },
-        { name: 'Projects', to: 'projects' },
-        { name: 'Certifications', to: 'certifications' },
         { name: 'Experience', to: 'experience' },
+        { name: 'Projects', to: 'projects' },
+        { name: 'Achievements', to: 'achievements' },
+        { name: 'Certifications', to: 'certifications' },
         { name: 'Contact', to: 'contact' },
     ];
 
@@ -34,27 +34,24 @@ export const Navbar = () => {
             )}
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
-                <Link
-                    to="home"
-                    smooth={true}
+                <a
+                    href="#home"
                     className="text-2xl font-bold flex items-center gap-2 cursor-pointer text-slate-900"
                 >
                     <div className="w-8 h-8 bg-slate-900 rounded-full flex items-center justify-center text-white text-sm">SC</div>
                     SRI CHARAN
-                </Link>
+                </a>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
-                        <Link
+                        <a
                             key={link.name}
-                            to={link.to}
-                            smooth={true}
-                            offset={-100}
+                            href={`#${link.to}`}
                             className="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors cursor-pointer font-medium"
                         >
                             {link.name}
-                        </Link>
+                        </a>
                     ))}
                     <a
                         href="https://drive.google.com/file/d/1cKQeoIAILhIsLSfyHP8oyEVND7oWK1y6/view"
@@ -78,16 +75,14 @@ export const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white dark:bg-dark shadow-lg py-8 flex flex-col items-center space-y-6">
                     {navLinks.map((link) => (
-                        <Link
+                        <a
                             key={link.name}
-                            to={link.to}
-                            smooth={true}
-                            offset={-100}
+                            href={`#${link.to}`}
                             onClick={() => setIsOpen(false)}
                             className="text-lg text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary font-medium"
                         >
                             {link.name}
-                        </Link>
+                        </a>
                     ))}
                     <a
                         href="https://drive.google.com/file/d/1cKQeoIAILhIsLSfyHP8oyEVND7oWK1y6/view?usp=sharing"

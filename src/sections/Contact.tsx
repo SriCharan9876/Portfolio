@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail, Phone, Linkedin, Github, Send } from 'lucide-react';
-import { Button } from '../components/ui/Button';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 
 export const Contact = () => {
     return (
@@ -13,73 +12,95 @@ export const Contact = () => {
                     className="mb-16 text-center"
                 >
                     <h2 className="text-4xl font-bold mb-4 text-slate-900">Get In Touch</h2>
-                    <p className="text-slate-500 text-lg">Let's collaborate on your next project.</p>
+                    <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+                        I'm open to internship opportunities and freelance projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                    </p>
                 </motion.div>
 
-                <div className="flex flex-col lg:flex-row gap-16 max-w-6xl mx-auto">
-                    {/* Contact Info */}
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                    {/* Email Card */}
+                    <motion.a
+                        href="mailto:charan3407@gmail.com"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="flex-1 space-y-8"
+                        transition={{ delay: 0.1 }}
+                        className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center text-center group hover:bg-slate-900 hover:border-slate-900 transition-all duration-300 cursor-pointer"
                     >
-                        <h3 className="text-2xl font-bold text-slate-900">Contact Information</h3>
-                        <p className="text-slate-600 text-lg leading-relaxed">
-                            I'm open to internship opportunities and freelance projects. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-                        </p>
-
-                        <div className="space-y-6">
-                            <div className="flex items-center gap-5">
-                                <div className="p-4 bg-slate-50 rounded-full text-slate-900 border border-slate-200"><Mail size={24} /></div>
-                                <span className="text-slate-600 text-lg">charan3407@gmail.com</span>
-                            </div>
-                            <div className="flex items-center gap-5">
-                                <div className="p-4 bg-slate-50 rounded-full text-slate-900 border border-slate-200"><Phone size={24} /></div>
-                                <span className="text-slate-600 text-lg">+91 9014379935</span>
-                            </div>
-                            <div className="flex items-center gap-5">
-                                <div className="p-4 bg-slate-50 rounded-full text-slate-900 border border-slate-200"><Linkedin size={24} /></div>
-                                <a href="https://linkedin.com/in/sri-charan-a-281532286" target="_blank" rel="noopener noreferrer" className="text-slate-600 text-lg hover:text-blue-600 transition-colors">linkedin.com/in/sri-charan...</a>
-                            </div>
-                            <div className="flex items-center gap-5">
-                                <div className="p-4 bg-slate-50 rounded-full text-slate-900 border border-slate-200"><Github size={24} /></div>
-                                <a href="https://github.com/SriCharan9876" target="_blank" rel="noopener noreferrer" className="text-slate-600 text-lg hover:text-slate-900 transition-colors">github.com/SriCharan9876</a>
-                            </div>
+                        <div className="p-4 bg-white rounded-full text-slate-900 border border-slate-200 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-800 transition-colors duration-300 mb-4 shadow-sm">
+                            <Mail size={28} />
                         </div>
-                    </motion.div>
+                        <h4 className="font-bold text-slate-900 group-hover:text-white transition-colors duration-300 text-lg mb-1">
+                            Email
+                        </h4>
+                        <p className="text-slate-500 group-hover:text-slate-300 transition-colors duration-300 text-sm break-all font-medium">
+                            charan3407@gmail.com
+                        </p>
+                    </motion.a>
 
-                    {/* Contact Form */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                    {/* Phone Card */}
+                    <motion.a
+                        href="tel:+919014379935"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="flex-1 bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm"
+                        transition={{ delay: 0.2 }}
+                        className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center text-center group hover:bg-slate-900 hover:border-slate-900 transition-all duration-300 cursor-pointer"
                     >
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-2">Name</label>
-                                    <input type="text" className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400" placeholder="John Doe" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-slate-700 mb-2">Email</label>
-                                    <input type="email" className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400" placeholder="john@example.com" />
-                                </div>
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Subject</label>
-                                <input type="text" className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400" placeholder="Project Inquiry" />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Message</label>
-                                <textarea rows={4} className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 outline-none transition-all placeholder:text-slate-400" placeholder="Tell me about your project..."></textarea>
-                            </div>
-                            <Button className="w-full flex items-center justify-center gap-2 py-4 text-lg">
-                                Send Message <Send size={18} />
-                            </Button>
-                        </form>
-                    </motion.div>
+                        <div className="p-4 bg-white rounded-full text-slate-900 border border-slate-200 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-800 transition-colors duration-300 mb-4 shadow-sm">
+                            <Phone size={28} />
+                        </div>
+                        <h4 className="font-bold text-slate-900 group-hover:text-white transition-colors duration-300 text-lg mb-1">
+                            Phone
+                        </h4>
+                        <p className="text-slate-500 group-hover:text-slate-300 transition-colors duration-300 text-sm font-medium">
+                            +91 9014379935
+                        </p>
+                    </motion.a>
+
+                    {/* LinkedIn Card */}
+                    <motion.a
+                        href="https://linkedin.com/in/sri-charan-a-281532286"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                        className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center text-center group hover:bg-slate-900 hover:border-slate-900 transition-all duration-300 cursor-pointer"
+                    >
+                        <div className="p-4 bg-white rounded-full text-slate-900 border border-slate-200 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-800 transition-colors duration-300 mb-4 shadow-sm">
+                            <Linkedin size={28} />
+                        </div>
+                        <h4 className="font-bold text-slate-900 group-hover:text-white transition-colors duration-300 text-lg mb-1">
+                            LinkedIn
+                        </h4>
+                        <p className="text-slate-500 group-hover:text-slate-300 transition-colors duration-300 text-sm font-medium">
+                            Connect with me
+                        </p>
+                    </motion.a>
+
+                    {/* GitHub Card */}
+                    <motion.a
+                        href="https://github.com/SriCharan9876"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.4 }}
+                        className="bg-slate-50 p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col items-center text-center group hover:bg-slate-900 hover:border-slate-900 transition-all duration-300 cursor-pointer"
+                    >
+                        <div className="p-4 bg-white rounded-full text-slate-900 border border-slate-200 group-hover:bg-slate-800 group-hover:text-white group-hover:border-slate-800 transition-colors duration-300 mb-4 shadow-sm">
+                            <Github size={28} />
+                        </div>
+                        <h4 className="font-bold text-slate-900 group-hover:text-white transition-colors duration-300 text-lg mb-1">
+                            GitHub
+                        </h4>
+                        <p className="text-slate-500 group-hover:text-slate-300 transition-colors duration-300 text-sm font-medium">
+                            Follow my code
+                        </p>
+                    </motion.a>
                 </div>
             </div>
         </section>
